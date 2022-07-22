@@ -1,0 +1,215 @@
+.App {
+  text-align: center;
+}
+
+.wrapper {
+  animation: fadeIn 500ms ease-in;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 30px;
+  box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.63);
+}
+
+.page-title {
+  color: black;
+  margin-top: 200px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .page-title {
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  .page-title {
+    margin-top: 200px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 3000px) {
+  .page-title {
+    margin-top: 15%;
+  }
+}
+
+.player-cell-box {
+  /* border: 1px solid red; */
+  background-color: whitesmoke;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.63);
+}
+.cell-avatar {
+  width: 50px;
+}
+.player-cell-grid {
+  width: 85%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 1%;
+  /* border: 1px solid red; */
+  font-family: monospace;
+  font-size: 1.25em;
+}
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+  .player-cell-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.cell-nameplate {
+  font-size: 1.15em;
+  font-weight: bold;
+}
+.cell-stat {
+  font-size: 0.85em;
+  /* border: 1px solid red; */
+  height: 50px;
+  text-align: center;
+}
+
+.cell-stat-title {
+  text-decoration: underline;
+}
+
+.player-game-btn {
+}
+
+#my-team-name {
+  transform: translate(0px, 80px);
+}
+
+.change-name-btn {
+  transform: translate(0px, 80px);
+}
+
+.matchup-tab {
+  font-family: monospace;
+  width: 90%;
+  background-color: whitesmoke;
+  padding: 5%;
+}
+.matchup-tab-name {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.45em;
+  font-weight: bold;
+}
+.matchup-tab-score {
+  font-family: monospace;
+  font-size: 1.75em;
+  font-family: bold;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+.season {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#stats-box {
+  font-family: monospace;
+  margin-top: 25px;
+  animation: fadeIn 500ms ease-in;
+}
+
+.shw {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+.stats-name {
+  text-align: left;
+  width: 80%;
+  font-size: 1.35em;
+  font-weight: bold;
+  margin-left: 10%;
+  background-color: whitesmoke;
+  padding: 5%;
+}
+
+.player-stat-tab {
+  border: 1px solid whitesmoke;
+  margin-bottom: 3%;
+  box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.63);
+}
+
+.tab-avatar {
+  width: 50px;
+  position: absolute;
+  left: 0;
+}
+.stat-tab-name {
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: left;
+  width: 86%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 14%;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.tab-durability-back {
+  padding: 0%;
+  margin: 0%;
+  background-color: red;
+  width: 100px;
+  height: 5px;
+  position: relative;
+  top: -5px;
+  left: 52px;
+}
+.tab-durability-front {
+  padding: 0%;
+  margin: 0%;
+  background-color: green;
+
+  height: 5px;
+  position: relative;
+  top: -10px;
+  left: 52px;
+}
+.tab-position {
+  font-weight: normal;
+}
